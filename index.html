@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Activaciones Bitel Diana</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logos">
+            <img src="imagenes/logo-bitel.png" alt="Logo de Bitel">
+            <img src="imagenes/logo-una.png" alt="Logo de la UNA Puno">
+        </div>
+        <img src="imagenes/foto.jpg" alt="Foto de Estefany">
+        <p class="frase">“Lo que no se mide no se puede mejorar.”</p>
+        <p class="autora">Estefany Diana Roque Salazar</p>
+        <h1>Activaciones de líneas móviles Bitel en Puno</h1>
+        <p>Octubre 27 de 2026 · Gestión de Business Analytics </p>
+    </header>
+    <section id="descriptiva">
+        <h2>1. Analítica descriptiva</h2>
+        <p>¿Qué pasó?</p>
+        <div id="resumen"></div>
+        <div id="tabla-canales"></div>
+        <canvas id="grafico-canales"></canvas>
+        <canvas id="grafico-dias"></canvas>
+    </section>
+    <section id="diagnostica">
+        <h2>2. Analítica diagnóstica</h2>
+        <p>¿Por qué pasó?</p>
+            <div id="tabla-cruzada"></div>
+    <canvas id="grafico-cruzado"></canvas>
+    <canvas id="grafico-semana"></canvas>
+    <p id="interpretacion-diagnostica"></p>
+    </section>
+    <section id="predictiva">
+        <h2>3. Analítica predictiva</h2>
+        <p>¿Qué pasará?</p>
+            <div id="resumen-prediccion"></div>
+    <canvas id="grafico-prediccion"></canvas>
+    <p><em>Limitación: solo hay un mes de datos, así que la predicción es una referencia.</em></p>
+    </section>
+    <section id="prescriptiva">
+        <h2>4. Analítica prescriptiva</h2>
+        <p>¿Qué debo hacer?</p>
+            <label for="deslizador">Refuerzo: <strong id="valor-deslizador">0</strong>%</label>
+    <input id="deslizador" type="range" min="0" max="100" value="0">
+    <div id="resultado-simulacion"></div>
+    <p id="recomendacion"></p>
+    </section>
+
+        <script src="chart.umd.js"></script>
+    <script src="datos.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
